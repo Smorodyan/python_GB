@@ -13,24 +13,18 @@
 coins = int(input('Input number of coins: '))
 count_1 = 0
 count_2 = 0
-one_coin_side = 0
-another_coin_side = 0
 for i in range(coins):
     coin_side = int(input())
     if coin_side == 1:
         count_1 += 1
-        if count_1 > one_coin_side:
-            one_coin_side = count_1
     else:
         count_2 += 1
-        if count_2 > another_coin_side:
-            another_coin_side = count_2
-if one_coin_side > another_coin_side:
-    print(another_coin_side)
-elif one_coin_side == another_coin_side:
+if count_1 > count_2:
+    print(count_2)
+elif count_1 == count_2:
     print('equal')
 else:
-    print(one_coin_side)
+    print(count_1)
 
 #Добавить проверку на ввод только 1 и 0. Добавить ввод в одну строку
 
