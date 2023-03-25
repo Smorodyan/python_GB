@@ -9,23 +9,31 @@
 # Input: 5 -> 1 0 1 1 0
 # Output: 2
 
-'''
+
 coins = int(input('Input number of coins: '))
 count_1 = 0
 count_2 = 0
+one_coin_side = 0
+another_coin_side = 0
 for i in range(coins):
     coin_side = int(input())
-    if coin_side == 0:
+    if coin_side == 1:
         count_1 += 1
+        if count_1 > one_coin_side:
+            one_coin_side = count_1
     else:
         count_2 += 1
-if count_1 > count_1:
-    print(count_2)
+        if count_2 > another_coin_side:
+            another_coin_side = count_2
+if one_coin_side > another_coin_side:
+    print(another_coin_side)
+elif one_coin_side == another_coin_side:
+    print('equal')
 else:
-    print(count_1)
+    print(one_coin_side)
 
-Добавить проверку на ввод только 1 и 0. Добавить ввод в одну строку
-'''
+#Добавить проверку на ввод только 1 и 0. Добавить ввод в одну строку
+
 
 
 
@@ -38,6 +46,7 @@ else:
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
+'''
 import math
 sum = int(input('a: '))
 mult = int(input('b: '))
@@ -52,7 +61,7 @@ else:
     x = int((sum + math.sqrt(d)) / 2)
     y = int((sum - math.sqrt(d)) / 2)
     print(x, y) 
-
+'''
 
 
 # Задача 14: 
