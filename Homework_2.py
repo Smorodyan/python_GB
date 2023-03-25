@@ -26,6 +26,8 @@ elif count_1 == count_2:
 else:
     print(count_1)
 
+print(min(count_1,count_2))
+
 #Добавить проверку на ввод только 1 и 0. Добавить ввод в одну строку
 
 
