@@ -11,31 +11,33 @@
 # 3 6 9 12 15 18
 # -> 6 12
 
-'''
-# num_1 = int(input())
-# num_2 = int(input())
+
+# num_1 = int(input('Input number of elements for the first array: '))
+# print('Input 1-st array: ')
 # list_1 = [int(input()) for i in range(num_1)]
+# num_2 = int(input('Input number of elements for the second array: '))
+# print('Input 2-nd array: ')
 # List_2 = [int(input()) for i in range(num_2)]
-list_1 = [2, 4, 12, 8, 10, 6, 10, 8, 6, 4, 2]
-list_2 = [3, 6, 9, 12, 15, 18]
+list_1 = [2, 4, 12, 8, 10, 6, 10, 8, 6, 18, 4, 2]
+list_2 = [3, 6, 9, 12, 15, 18, 4]
 list_3 = []
 for i in range(len(list_1)):
     for j in range(len(list_2)):
         if list_1[i] == list_2[j]:
-            list_3.append(list_1[i])
+            if list_1[i] not in list_3:
+                list_3.append(list_1[i])
             
+print(sorted(list_3))
 
-print(list_3)
-# min = list_3[0]
-for i in list_3:
-    min = i
-    for j in list_3:
-        if j < min:
-            min = j
-    print(min)
-'''
-
-
+# Вывод по возрастанию пузырьком:
+# print(list_3)
+# for i in range(len(list_3)):
+#     for j in range(len(list_3) - i - 1):
+#         if list_3[j] > list_3[j+1]:
+#             temp = list_3[j]
+#             list_3[j] = list_3[j+1]
+#             list_3[j+1] = temp
+# print(list_3)
 
 
 
@@ -56,8 +58,9 @@ for i in list_3:
 # собрать за один заход собирающий модуль, находясь перед некоторым кустом
 # заданной во входном файле грядки.
 # Input: 5 -> 3 5 1 4 7
-# Otput: 14
+# Otput: 15
 
+'''
 num = int(input('Input nuumber of bushes:'))
 berries = [int(input()) for i in range(num)]
 sum = 0
@@ -78,3 +81,4 @@ for i in volume:
     if i > max:
         max = i
 print(max)
+'''
