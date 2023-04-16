@@ -10,7 +10,7 @@
 # 3
 # -> 1
 
-'''
+
 n = int(input('Input a number of elements: '))
 array = [int(input()) for item in range(n)]
 print(*array)
@@ -20,7 +20,9 @@ for i in range(n):
     if x == array[i]:
         count += 1
 print('->', count)
-'''
+print(array.count(x))
+
+
 
 
 
@@ -91,6 +93,7 @@ print('the nearest element is:', min_element)
 # Input: ноутбук
 # Output: 12
 
+'''
 dictionary = ({1 : ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'S', 'T', 'R'],
               2 : ['D', 'G'],
               3 : ['B', 'C', 'M', 'P'],
@@ -116,6 +119,6 @@ for i in word.lower():
                 if i == k.lower():
                     sum += key
 print('The sum of characters of the word is:', sum)
-
+'''
 
 

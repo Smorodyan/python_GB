@@ -38,7 +38,7 @@ for i in quote:
 # shore shells
 # Output: 13
 
-'''
+
 text = 'She sells sea shells on the sea shore\
         The shells that she sells are sea shells\
         Im sure.So if she sells sea shells on the sea shore\
@@ -47,7 +47,7 @@ text = text.replace('.', ' ').lower().split()
 # for znak in ('.', ',', '!', ':', '?'):
 #     text = text.replace(znak, ' ')
 print(set(text), len(set(text)))
-'''
+
 
 
 # Задача №29. 
@@ -75,7 +75,7 @@ for i in range(len(nums)):
 print(max)
 '''
 
-
+'''
 array = []
 i = 0
 num = None
@@ -96,4 +96,4 @@ for i in range(len(array)):
     
 print(array)
 print('max =', max)
-
+'''
